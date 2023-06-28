@@ -9,6 +9,10 @@
     // transform: scale(1.04) translateY(-1px);
     transform-origin: top;
 
+    @media only screen and (max-width: $bp-medium) {
+      height: 20rem;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -60,6 +64,10 @@
     @media only screen and (max-width: $bp-medium) {
       width: 70%;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 50%;
+    }
   }
 
   ///////////
@@ -68,6 +76,9 @@
     display: flex;
     align-items: center;
     padding: 7.5rem 8rem 3.5rem 8rem;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
   }
 
   &__info {
